@@ -7,16 +7,83 @@
 <h1>Git Learning</h1>
 
 <br>
-<p>Basic Version Commands</p>
 
+<p>
 
-<p>Installation Process</p>
+<h4>	Git Basic Commands</h4>
 
+	<ul>1. $ git init </ul>
+	<ul>2. $ git add <File> </ul>
+	<ul>3. $ git status</ul>
+	<ul>4. $ git commit</ul>
+	<ul>5. $ git push</ul>
+	<ul>6. $ git pull</ul>
+	<ul>7. $ git clone</ul>
+	<br>
+	<ul>2.1 $ git add Filename.extn or Filename.* or . (add all files)</ul>
 
-<p>Other Important Commands</p>
+	<br>
+	<h4>Other Commands</h4>
 
+	<ul>1. $ git --version</ul>
+<ul>	2. $ touch filename.extn //(Create New File)</ul>
+	
+	<br>
+	<h4>Adding User Name & Email Address</h4>
 
+	<ul>$ git config --global user.name 'Sathish Murugiah'</ul>
+	<ul>$ git config --global user.email 'Sathish.Murugiah@gmail.com'</ul>
+<br>
+	<h4>Commit Files (Two Types)</h4>
 
-<h5>reverse the previous change</h5>
+	<ul>1. $ git commit //(this will open editor but nothing editable unless press 	'i' Key and type command 'Initial Commit' press 'Escape' key and type :wq to come out)</ul>
+	
+	<ul>2. $ git commit -m 'User Comments' // (this -m will skip the editing part)</ul>
+	
+	<br>
+		<h4>Git Ignore</h4>
+
+	$ touch .gitingnore (once gitignore created, add filename to .gitignore file same applicable to directories as well)
+	example: adding file to gitignore (filename.extn or *.extn)
+			adding directories (/dir name)
+	<br>
+		<h4>Branches</h4>
+
+	<ul>$ git branch branchname //Create Branch</ul>
+	<ul>$ git checkout branchname //switch to start working in the branch</ul>
+
+		<ul>	Note: Once we switch back to master from branch none of the branch files will be seen, will be visible once merge done</ul>
+<br>
+	<h4>MErge MAster and branch</h4>
+
+<ul>	$ git merge branchname (this will open editor)</ul>
+	<br>
+		<h4>Adding Local Repo in Remote Repo</h4>
+
+	
+<ul>	1. $ git remote</ul>
+<ul>	2.  git remote add origin https://github.com/SMurugiah/gitlearning.git
+	Create Remote Repo (Once created u will get command like above with remote repo details copy the command)</ul>
+	
+<ul>	3. git push -u origin master (push local repo to remote repo)
+		Refresh remote repo to see all files</ul>
+
+<br>
+	<h4>Push Files from local repo to remote repo</h4>
+
+<ul>	1. $ git push</ul>
+	
+	<br>
+		<h4>Pull</h4>
+
+<ul>	$ git pull</ul>
+<br>
+	<h4>Clone</h4>
+
+<ul>	$ git clone https://github.com/SMurugiah/gitlearning.git
+	Create a loca repo folder, open bash and git clone link (copied from remote repo)</ul>
+<br>
+</p>
+
 </body>
 </html>
